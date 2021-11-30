@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
 #creating db vm
   config.vm.define "db" do |db|
     db.vm.box = "ubuntu/xenial64"
-    db.vm.network "private_network", ip: "192.168.10.100"
+    db.vm.network "private_network", ip: "192.168.10.150"
     db.vm.synced_folder ".", "/home/vagrant/app"
 
   end

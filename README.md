@@ -117,6 +117,7 @@ sudo systemctl status mongod
 
 `export DB_HOST="mongodb://192.168.10.150:27017/posts"` 192.168.10.150 is the IP of the db VM and the db is on port 27017
 Refresh the db on the app VM by running `Node seed.js` in the seeds dir (app/app/seeds)
+`printenv DB_HOST` to check if the enviroment variable `DB_HOST`was created 
 cd back to app/app and run the app 
 `npm install`
 `npm start`

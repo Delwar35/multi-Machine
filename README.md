@@ -116,7 +116,7 @@ sudo systemctl status mongod
 #Connect app VM to db VM
 
 `export DB_HOST="mongodb://192.168.10.150:27017/posts"` 192.168.10.150 is the IP of the db VM and the db is on port 27017
-Refresh the db on the app VM by running `Node seed.js` in the seeds dir (app/app/seeds)
+Refresh the db on the app VM by running `node seed.js` in the seeds dir (app/app/seeds)
 `printenv DB_HOST` to check if the enviroment variable `DB_HOST`was created 
 cd back to app/app and run the app 
 `npm install`
@@ -129,7 +129,7 @@ Within the server block you should have an existing location / block.
 Replace the contents of that block with the following configuration.
 If your application is set to listen on a different port, update `localhost:8080` to `localhost:correct port number (your port number)`.
 
-'''
+```
     location / {
         proxy_pass http://localhost:8080;
         proxy_http_version 1.1;
@@ -139,7 +139,7 @@ If your application is set to listen on a different port, update `localhost:8080
         proxy_cache_bypass $http_upgrade;
     }
 }
-'''
+```
  
 
 

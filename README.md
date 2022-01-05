@@ -93,9 +93,9 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
 ```
 -check mongodb staus:
 ```
-sudo systemctl restart mongod
-sudo systemctl enable mongod
-sudo systemctl status mongod
+sudo systemctl restart mongodb
+sudo systemctl enable mongodb
+sudo systemctl status mongodb
 
 ```
 - Config mondodb:
@@ -104,9 +104,9 @@ Once in the config file change IP to 0.0.0.0 so everyone can access the file.
 
 - Restart Mongodb
 ```
-sudo systemctl restart mongod
-sudo systemctl enable mongod
-sudo systemctl status mongod
+sudo systemctl restart mongodb
+sudo systemctl enable mongodb
+sudo systemctl status mongodb
 
 ```
 `exit` to leave db VM
